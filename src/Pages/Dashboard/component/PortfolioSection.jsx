@@ -1,4 +1,4 @@
-import { Button, Flex, HStack, Icon, Stack, Tag, Text } from "@chakra-ui/react";
+import { Button, HStack, Icon, Stack, Tag, Text } from "@chakra-ui/react";
 import { BiInfoCircle } from "react-icons/bi";
 import { AiOutlineArrowDown, AiOutlineArrowUp } from "react-icons/ai";
 const PortfolioSection = () => {
