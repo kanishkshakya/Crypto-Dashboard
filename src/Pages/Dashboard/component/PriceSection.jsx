@@ -26,7 +26,7 @@ const PriceSection = () => {
     "11:15 PM",
   ];
   return (
-    <CustomCard>
+    <CustomCard w="400px">
       <Flex justify="space-between" align="start">
         <Stack>
           <HStack color="black.80">
@@ -44,7 +44,7 @@ const PriceSection = () => {
             }}
           >
             <HStack>
-              <Text textStyle="h4">22.39401000</Text>
+              <Text textStyle="h5">22.39401000</Text>
             </HStack>
             <HStack color="green.400">
               <Icon as={BsArrowUpRight} fontWeight="medium" fontSize="sm" />
@@ -52,7 +52,7 @@ const PriceSection = () => {
             </HStack>
           </HStack>
         </Stack>
-        <HStack fontWeight="medium">
+        <HStack fontWeight="medium" textStyle="20px">
           <Button leftIcon={<Icon as={AiOutlinePlusCircle} />}>Buy</Button>
           <Button leftIcon={<Icon as={AiOutlineMinusCircle} />}>Sell</Button>
         </HStack>
@@ -76,7 +76,7 @@ const PriceSection = () => {
         <TabPanels>
           <TabPanel></TabPanel>
           <TabPanel>
-            <Image src="/graph.svg" width="100%" mt="4" />
+            <Image src="/graph.svg" width="100%" mt="2" />
             <HStack justify="space-between">
               {timestamps.map((timestamp) => (
                 <Text key={timestamp} fontSize="sm" color="black.80">

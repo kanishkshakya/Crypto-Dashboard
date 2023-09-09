@@ -71,12 +71,12 @@ const theme = extendTheme(
       },
       h6: {
         fontSize: {
-          base: "16px",
-          md: "18px",
+          base: "14px",
+          md: "16px",
         },
         color: "p.black",
 
-        lineHeight: { base: "20px", md: "22px" },
+        lineHeight: { base: "18px", md: "20px" },
       },
     },
     fontSizes: {

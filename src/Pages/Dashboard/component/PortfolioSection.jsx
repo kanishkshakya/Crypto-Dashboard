@@ -4,10 +4,10 @@ import { AiOutlineArrowDown, AiOutlineArrowUp } from "react-icons/ai";
 const PortfolioSection = () => {
   return (
     <HStack
+      h="full"
       justifyContent="space-between"
-      bg="white"
       borderRadius="lg"
-      p="6"
+      p="3"
       alignItems={{
         base: "flex-start",
         xl: "center",
@@ -21,20 +21,7 @@ const PortfolioSection = () => {
         xl: "0",
       }}
     >
-      <HStack
-        spacing={{
-          base: "0",
-          xl: "16",
-        }}
-        alignItems={{
-          base: "flex-start",
-          xl: "center",
-        }}
-        flexDir={{
-          base: "column",
-          xl: "row",
-        }}
-      >
+      <HStack>
         <Stack
           spacing={{
             base: "4",
@@ -45,7 +32,7 @@ const PortfolioSection = () => {
             <Text fontSize="sm">Total Portfolio Value</Text>
             <Icon as={BiInfoCircle} />
           </HStack>
-          <Text textStyle="h4">$ 112, 312.24</Text>
+          <Text textStyle="h6">$ 112, 312.24</Text>
         </Stack>
         <Stack>
           <HStack color="black.80">
@@ -62,11 +49,11 @@ const PortfolioSection = () => {
             }}
           >
             <HStack>
-              <Text textStyle="h4">22.39401000</Text>
+              <Text textStyle="h6">22.39401000</Text>
               <Tag colorScheme="gray">BTC</Tag>
             </HStack>
             <HStack>
-              <Text textStyle="h4">1, 300.00</Text>
+              <Text textStyle="h6">1, 300.00</Text>
               <Tag colorScheme="gray">INR</Tag>
             </HStack>
           </HStack>

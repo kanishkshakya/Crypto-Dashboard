@@ -2,10 +2,11 @@ import { Box, HStack, Heading, Icon, Stack, Text } from "@chakra-ui/react";
 import { RxDashboard } from "react-icons/rx";
 import { BsArrowDownUp } from "react-icons/bs";
 import { BiSupport } from "react-icons/bi";
+import { Link } from "react-router-dom";
 const Sidenav = () => {
   const navLinks = [
     { icons: RxDashboard, text: "Dashbroard", link: "/" },
-    { icons: BsArrowDownUp, text: "Transactions", link: "Transactions" },
+    { icons: BsArrowDownUp, text: "Transactions", link: "/Transaction" },
   ];
   return (
     <Stack
@@ -19,7 +20,7 @@ const Sidenav = () => {
         base: "full",
         lg: "16rem",
       }}
-      h="100vh"
+      h="100%"
     >
       <Box>
         <Heading textAlign="center" as="h1" fontSize="20px" pt="3.5rem">
@@ -27,22 +28,23 @@ const Sidenav = () => {
         </Heading>
         <Box mx="3" mt="6">
           {navLinks.map((nav) => (
-            <HStack
-              key={nav.text}
-              color="#797e82"
-              py="3"
-              px="4"
-              borderRadius="4"
-              _hover={{
-                bg: "#f3f3f7",
-                color: "#171717",
-              }}
-            >
-              <Icon as={nav.icons} />
-              <Text fontSize="14px" fontWeight="medium">
-                {nav.text}
-              </Text>
-            </HStack>
+            <Link to={nav.link} key={nav.text}>
+              <HStack
+                color="#797e82"
+                py="3"
+                px="4"
+                borderRadius="4"
+                _hover={{
+                  bg: "#f3f3f7",
+                  color: "#171717",
+                }}
+              >
+                <Icon as={nav.icons} />
+                <Text fontSize="14px" fontWeight="medium">
+                  {nav.text}
+                </Text>
+              </HStack>
+            </Link>
           ))}
         </Box>
       </Box>
