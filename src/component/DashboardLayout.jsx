@@ -23,7 +23,7 @@ const DashboardLayout = ({ title, children }) => {
           maxW="52rem"
           overflowX="hidden"
           overflowY="auto"
-          h="calc(100%-100px)"
+          h="calc(100vh-100px)"
           px="4"
         >
           {children}

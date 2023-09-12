@@ -5,6 +5,10 @@ import { Tag, Text } from "@chakra-ui/react";
 const InfoCard = ({ imgUrl, tagText, text, inverted }) => {
   return (
     <CustomCard
+      mt={{
+        base: "2",
+        lg: "0",
+      }}
       bgImage={imgUrl}
       bgSize="cover"
       bgRepeat="no-repeat"

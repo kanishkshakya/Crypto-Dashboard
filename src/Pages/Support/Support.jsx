@@ -1,7 +1,8 @@
 import React from "react";
+import DashboardLayout from "../../component/DashboardLayout";
 
 const Support = () => {
-  return <div>Support</div>;
+  return <DashboardLayout>support</DashboardLayout>;
 };
 
 export default Support;

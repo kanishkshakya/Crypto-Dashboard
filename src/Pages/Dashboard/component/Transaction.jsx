@@ -38,7 +38,7 @@ const Transaction = () => {
     },
   ];
   return (
-    <CustomCard fontSize="sm" color="black.80" h="full">
+    <CustomCard fontSize="sm" color="black.80" h="100%">
       <Text>Recent Transaction</Text>
       <Stack spacing={4}>
         {transactions.map((transaction, i) => (

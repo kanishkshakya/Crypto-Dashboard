@@ -20,7 +20,10 @@ const Sidenav = () => {
         base: "full",
         lg: "16rem",
       }}
-      h="100%"
+      h={{
+        md: "100%",
+        lg: "100vh",
+      }}
     >
       <Box>
         <Heading textAlign="center" as="h1" fontSize="20px" pt="3.5rem">
@@ -49,21 +52,23 @@ const Sidenav = () => {
         </Box>
       </Box>
       <Box mx="3" mt="6" mb="6">
-        <HStack
-          py="3"
-          px="4"
-          color="#797e82"
-          borderRadius="4"
-          _hover={{
-            bg: "#f3f3f7",
-            color: "#171717",
-          }}
-        >
-          <Icon as={BiSupport} />
-          <Text fontSize="14px" fontWeight="medium">
-            Support
-          </Text>
-        </HStack>
+        <Link to="/support">
+          <HStack
+            py="3"
+            px="4"
+            color="#797e82"
+            borderRadius="4"
+            _hover={{
+              bg: "#f3f3f7",
+              color: "#171717",
+            }}
+          >
+            <Icon as={BiSupport} />
+            <Text fontSize="14px" fontWeight="medium">
+              Support
+            </Text>
+          </HStack>
+        </Link>
       </Box>
     </Stack>
   );
