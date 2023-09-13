@@ -22,6 +22,7 @@ const Sidenav = () => {
       }}
       h={{
         md: "100%",
+        xl: "100vh",
         lg: "100vh",
       }}
     >
